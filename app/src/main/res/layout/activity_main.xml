@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hijau"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/logo2"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data "
+                android:textSize="30sp"
+                android:textColor="@color/coklat"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:background="@drawable/button_bg2"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:background="@drawable/button_bg2"
+                />
+
+            <GridLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:rowCount="1"
+                android:columnCount="2"
+                >
+                <EditText
+                    android:id="@+id/btn1Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Class ?"
+                    android:textColorHint="@color/putih"
+                    android:textColor="@color/putih"/>
+
+                <Button
+                    android:id="@+id/btnOK1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:background="@drawable/button_bg"
+                    android:layout_gravity="center"/>
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:rowCount="1"
+                android:columnCount="2"
+                >
+                <EditText
+                    android:id="@+id/btn2Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Class ?"
+                    android:textColorHint="@color/putih"
+                    android:textColor="@color/putih"
+                    />
+
+                <Button
+                    android:id="@+id/btnOK2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:background="@drawable/button_bg"
+                    android:layout_gravity="center"/>
+            </GridLayout>
+
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
